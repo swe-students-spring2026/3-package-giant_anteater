@@ -1,5 +1,3 @@
-import random
-
 def align_numbers(a: int, b: int, fill: int = 0):
     """Aligns two integers by digits, padding the shorter number with `fill`."""
     a_digits = [int(d) for d in str(a)]
@@ -102,17 +100,17 @@ def format_steps(step_dict):
             display += "- " + e + "\n"
     display += "Final Answer = " + result_show
     return display
-def generate_random_problem(num_digits: int = 7):
-    """Generates two random integers with `num_digits` digits."""
-    a = random.randint(10**(num_digits-1), 10**num_digits - 1)
-    b = random.randint(10**(num_digits-1), 10**num_digits - 1)
-    return a, b
+# def generate_random_problem(num_digits: int = 7):
+#     """Generates two random integers with `num_digits` digits."""
+#     a = random.randint(10**(num_digits-1), 10**num_digits - 1)
+#     b = random.randint(10**(num_digits-1), 10**num_digits - 1)
+#     return a, b
 
-def check_answer(user_input: int, correct_sum: int) -> bool:
-    """Validates user's answer."""
-    return user_input == correct_sum
+# def check_answer(user_input: int, correct_sum: int) -> bool:
+#     """Validates user's answer."""
+#     return user_input == correct_sum
 
-# step = add_step_by_step(9279342, 4673562)
+# step = add_step_by_step(123, 987)
 # print(format_steps(step))
 
 # # Step 1: generate two numbers

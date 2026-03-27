@@ -28,3 +28,5 @@ if check_answer(user_input, correct_sum):
 else:
     print(f"Oops! The answer is wrong. ❌")
     print(format_steps(step_dict))
+
+# pip install addition-tutor
