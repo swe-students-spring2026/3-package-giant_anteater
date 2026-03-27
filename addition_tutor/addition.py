@@ -77,13 +77,13 @@ def format_steps(step_dict):
     max_len = max(len(a_digits), len(b_digits), len(result))
     a_digits = [0]*(max_len - len(a_digits)) + a_digits
     b_digits = [0]*(max_len - len(b_digits)) + b_digits
-    carry = [0]*(max_len - len(carry)) + carry
+    carry = (carry + [0])[-max_len:]
     result = [0]*(max_len - len(result)) + result
 
     # Convert digits to strings
     a_str = " ".join(map(str, a_digits))
     b_str = " ".join(map(str, b_digits))
-    carry_str = " ".join(map(str, carry))
+    carry_str = " ".join(map(str, carry[:-1]))
     result_str = " ".join(map(str, result))
   
 
@@ -92,7 +92,7 @@ def format_steps(step_dict):
     display += "Adding "+a_show+ " to " +b_show + "\n"    
     display += "  " + a_str + "\n"                # top number
     display += "+ " + b_str + "\n"               # bottom number with plus
-    display += "  " + carry_str + "  " +"<-- carry"+"\n"           # carry directly under digits
+    display += "  " + carry_str + "    " +"<-- carry"+"\n"           # carry directly under digits
     display += "-" * (len(result_str)+2) + "\n"  # separator
     display += "  " + result_str + "\n"                  # final result
     # Add step-by-step explanations
