@@ -1,11 +1,11 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="addition_tutor",
+    name="anteater_tools",
     version="0.1.1",
-    author="GIANT_ANTEATER",
-    author_email="you@example.com",
-    description="A Python package to teach step-by-step long integer addition",
+    author="Giant_Anteater",
+    author_email="",
+    description="A toolbox full of useful functions.",
     packages=find_packages(),
     python_requires=">=3.10",
     install_requires=[],
