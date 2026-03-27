@@ -2,8 +2,8 @@ from setuptools import setup, find_packages
 
 setup(
     name="addition_tutor",
-    version="0.1.0",
-    author="Your Name",
+    version="0.1.1",
+    author="GIANT_ANTEATER",
     author_email="you@example.com",
     description="A Python package to teach step-by-step long integer addition",
     packages=find_packages(),
