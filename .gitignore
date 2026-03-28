@@ -1,6 +1,7 @@
 # mac junk
 .DS_Store
-
+Pipfile
+Pipfile.lock
 # visual studio code junk
 .vscode/
 .vscode/settings.json
