@@ -25,11 +25,10 @@ See [example.py](./example.py) for a complete program that uses every function.
 ```python
 from anteater_tools import add_with_steps
 
-print(add_with_steps(123, 987))
+print(add_with_steps(123856, 98729312))
 # Prints a formatted column-addition breakdown with carries and step-by-step explanations.
 
-print(add_with_steps(55, 45, show_carry=False))
-# Same layout but without the carry row.
+
 ```
 
 **`add_with_steps(a, b, show_carry=True) -> str`**
@@ -200,7 +199,7 @@ pipenv run twine upload dist/*
 ## Team
 
 - [Zelu Zhang](https://github.com/zzl0720-2025)
-- [Teammate 2](https://github.com/teammate2)
-- [Teammate 3](https://github.com/teammate3)
-- [Teammate 4](https://github.com/teammate4)
-- [Teammate 5](https://github.com/teammate5)
+- [William Zhang](https://github.com/Incrediblez7)
+- [James Zheng](https://github.com/hyperjasm)
+- [Zheqi Zhang](https://github.com/zheqi111)
+- [Qingyue Zhu](https://github.com/Kairiszqy)
