@@ -5,6 +5,7 @@ name = "pypi"
 
 [packages]
 anteater-tools = {editable = true, path = "."}
+pytest = "*"
 
 [dev-packages]
 pytest='*'
